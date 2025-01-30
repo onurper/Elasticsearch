@@ -22,6 +22,7 @@ namespace Elasticsearch.WEB.Controllers
             searchPageView.TotalCount = totalCount;
             searchPageView.PageLinkCount = pageLinkCount;
 
+
             return View(searchPageView);
         }
     }

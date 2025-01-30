@@ -4,7 +4,6 @@ namespace Elasticsearch.WEB.Models
 {
     public class ECommerce
     {
-
         [JsonPropertyName("_id")]
         public string Id { get; set; } = null!;
 
@@ -17,12 +16,10 @@ namespace Elasticsearch.WEB.Models
         [JsonPropertyName("customer_full_name")]
         public string CustomerFullName { get; set; } = null!;
 
-
         [JsonPropertyName("customer_gender")]
         public string Gender { get; set; } = null!;
 
-		[JsonPropertyName("taxful_total_price")]
-    
+        [JsonPropertyName("taxful_total_price")]
         public double TaxfulTotalPrice { get; set; }
 
         [JsonPropertyName("category")]
@@ -33,6 +30,7 @@ namespace Elasticsearch.WEB.Models
 
         [JsonPropertyName("order_date")]
         public DateTime OrderDate { get; set; }
+
         [JsonPropertyName("products")]
         public Product[] Products { get; set; }
     }
@@ -40,7 +38,6 @@ namespace Elasticsearch.WEB.Models
     public class Product
 
     {
-
         [JsonPropertyName("product_id")]
         public long ProductId { get; set; }
 

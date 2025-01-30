@@ -4,7 +4,6 @@ namespace Elasticsearch.API.Models.ECommerceModel
 {
     public class ECommerce
     {
-
         [JsonPropertyName("_id")]
         public string Id { get; set; } = null!;
 
@@ -18,7 +17,6 @@ namespace Elasticsearch.API.Models.ECommerceModel
         public string CustomerFullName { get; set; } = null!;
 
         [JsonPropertyName("taxful_total_price")]
-    
         public double TaxfulTotalPrice { get; set; }
 
         [JsonPropertyName("category")]
@@ -29,6 +27,7 @@ namespace Elasticsearch.API.Models.ECommerceModel
 
         [JsonPropertyName("order_date")]
         public DateTime OrderDate { get; set; }
+
         [JsonPropertyName("products")]
         public Product[] Products { get; set; }
     }
@@ -36,7 +35,6 @@ namespace Elasticsearch.API.Models.ECommerceModel
     public class Product
 
     {
-
         [JsonPropertyName("product_id")]
         public long ProductId { get; set; }
 
